@@ -118,7 +118,7 @@ ENV SPARK_HOME /usr/local/spark
 ENV PATH $PATH:$SPARK_HOME/bin:$HADOOP_PREFIX/bin
 
 RUN mkdir -p /usr/local/flume \
-  && curl -s https://archive.apache.org/dist/flume/stable/apache-flume-1.5.1-bin.tar.gz \
+  && curl -s https://archive.apache.org/dist/flume/1.5.2/apache-flume-1.5.2-bin.tar.gz \
   | tar zx -C /usr/local/flume --strip 1
 
 COPY config/flume/flume.conf /etc/flume/flume.conf
